@@ -10,7 +10,7 @@ export const Item = styled.div`
 `
 
 export const Terminator = styled.button`
-    color: red;
+   
     width: 80px;
     height: 25px;
     text-align: center;    

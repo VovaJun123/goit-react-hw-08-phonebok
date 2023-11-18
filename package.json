@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://VovaJun123.github.io/goit-react-hw-08-phonebok/",
+  "homepage": "https://VovaJun123.github.io/goit-react-hw-08-phonebоk/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.16.3",

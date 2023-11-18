@@ -1,10 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from 'components/App';
-import './index.css';
+import { Provider } from 'react-redux';
+import { App } from './Components/App';
+import { GlobalStyle } from './GlobalStyle';
+import { store, persistor } from 'Redux/store';
+import { PersistGate } from 'redux-persist/integration/react';
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter basename="/goit-react-hw-08-phonebok">
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <div>
+          <GlobalStyle />
+          <App />
+        </div>
+      </PersistGate>
+    </Provider>
+  </BrowserRouter>
 );
